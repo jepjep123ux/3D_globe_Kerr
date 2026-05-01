@@ -1,47 +1,56 @@
-# Wildlife Tracking Dashboard
+# WorldView 3D
 
-An interactive 3D wildlife tracking dashboard powered by Movebank API, built with Next.js, React Three Fiber, and Framer Motion.
+An interactive 3D globe application that displays comprehensive country information, built with Next.js, React Three Fiber, and Framer Motion.
 
-## Features
+## 🌍 Live Demo
+**View the live application**: [https://jepjep123ux.github.io/3D_Worldview_Kerrrr/](https://jepjep123ux.github.io/3D_Worldview_Kerrrr/)
 
-- **3D Globe Visualization**: Interactive 3D Earth with realistic textures
-- **Animal Tracking**: Visualize animal movement paths in 3D with animated trails
-- **Playback System**: Animated timeline with play/pause controls
-- **Real-time Data**: Fetches live data from Movebank API
-- **Futuristic UI**: Glassmorphism panels with neon accents and particle effects
-- **Interactive Controls**: Orbit controls with zoom, rotate, and pan
+## ✨ Features
 
-## Tech Stack
+- **3D Globe Visualization**: Interactive 3D Earth with realistic textures and smooth rotation
+- **Country Information**: Comprehensive data for all world countries including demographics, economy, and geography
+- **Search Functionality**: Real-time country search with autocomplete suggestions
+- **Interactive Controls**: Orbit controls with zoom, rotate, and pan capabilities
+- **Modern UI**: Glassmorphism design with neon blue accents and particle effects
+- **Animation System**: Smooth camera transitions and playback controls
 
-- **Frontend**: Next.js 16, React, TypeScript
+## 🛠️ Technology Stack
+
+- **Frontend**: Next.js 16, React 19, TypeScript
 - **3D Graphics**: Three.js, React Three Fiber, Drei
 - **Animations**: Framer Motion
 - **Styling**: Tailwind CSS with custom glassmorphism effects
-- **Data Source**: Movebank API
+- **Post-Processing**: Bloom effects for enhanced visuals
+- **Deployment**: GitHub Pages
 
-## Getting Started
+## 🚀 Getting Started
 
-1. Install dependencies:
+### Prerequisites
+- Node.js (version 18+)
+- npm or yarn
+
+### Local Development
 ```bash
+# Clone the repository
+git clone https://github.com/jepjep123ux/3D_Worldview_Kerrrr.git
+cd 3D_Worldview_Kerrrr
+
+# Install dependencies
 npm install
-```
 
-2. Run the development server:
-```bash
+# Run development server
 npm run dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
+Visit `http://localhost:3000` to view the application locally.
 
-## Usage
+### Build for Production
+```bash
+npm run build
+npm start
+```
 
-1. **Select a Study**: Choose from available public studies in the left panel
-2. **View Animal Tracks**: Animal movement paths are displayed on the 3D globe
-3. **Playback Animation**: Use the timeline controls at the bottom to animate movement
-4. **Animal Details**: Click on an animal in the legend to view detailed statistics
-5. **Interact with Globe**: Drag to rotate, scroll to zoom, right-click to pan
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 src/
@@ -51,28 +60,70 @@ src/
 │   └── layout.tsx         # Root layout
 ├── components/
 │   ├── globe/
-│   │   └── Globe.tsx      # 3D globe with Three.js
-│   ├── ui/
-│   │   ├── AnimalPanel.tsx # Animal info panel
-│   │   ├── PlaybackControls.tsx # Timeline controls
-│   │   └── StudySelector.tsx # Study selection
-│   └── animal/            # Animal-related components
-├── services/
-│   └── movebank.ts        # Movebank API service
-├── types/
-│   └── movebank.ts        # TypeScript type definitions
-└── lib/
-    └── utils.ts           # Utility functions
+│   │   └── Globe.tsx      # 3D globe component
+│   └── ui/
+│       └── PlaybackControls.tsx # Timeline controls
+├── types/                 # TypeScript definitions
+└── lib/                   # Utility functions
 ```
 
-## Environment Variables
+## 🎯 How It Works
 
-The app uses public Movebank data by default. For private studies, you can configure authentication in `src/services/movebank.ts`.
+The application renders a 3D Earth model using Three.js and places markers for each country based on geographical coordinates. Users can explore the globe through mouse controls, search for specific countries, and view detailed information in modal overlays.
 
-## License
+## 📊 Data Sources
 
-MIT
+Country information compiled from reliable sources including:
+- United Nations geographical data
+- World Bank economic indicators
+- Official country statistics
+- ISO country codes and standards
 
-## Data Source
+## 🎨 Features in Detail
 
-Animal tracking data provided by [Movebank](https://www.movebank.org/) - a free, online database for animal tracking data hosted by the Max Planck Institute for Animal Behavior.
+### 3D Visualization
+- Realistic Earth textures (topology and blue marble)
+- Dynamic lighting with multiple light sources
+- Bloom post-processing effects
+- Starfield background
+
+### User Interface
+- Responsive design optimized for desktop and mobile
+- Glassmorphism panels with neon blue accents
+- Smooth animations and transitions
+- Modal overlays for country information
+
+### Performance
+- Dynamic component loading to prevent SSR issues
+- Memoized calculations for smooth performance
+- Optimized 3D rendering at 60fps
+
+## 🌐 Browser Support
+
+- Modern browsers with WebGL support
+- Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit changes (`git commit -am 'Add new feature'`)
+4. Push to branch (`git push origin feature/new-feature`)
+5. Create a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- Three.js community for 3D graphics capabilities
+- React Three Fiber for React integration
+- Next.js team for the excellent framework
+- Open source contributors for various libraries used
+
+---
+
+**Experience the world in 3D!** 🗺️✨</content>
+<parameter name="filePath">README.md

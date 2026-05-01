@@ -1,0 +1,14 @@
+{"timestamp":"00:00:02.192","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:03.885","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:11:04.949","source":"Server","level":"ERROR","message":"Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
+{"timestamp":"00:11:04.956","source":"Server","level":"ERROR","message":"⨯ \"unhandledRejection:\" Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
+{"timestamp":"00:11:04.961","source":"Server","level":"ERROR","message":"⨯ \"unhandledRejection: \" Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
+{"timestamp":"00:11:05.136","source":"Server","level":"ERROR","message":"⨯ PageNotFoundError: Cannot find module for page: route not found /_not-found/page"}
+{"timestamp":"00:11:05.821","source":"Server","level":"ERROR","message":"Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
+{"timestamp":"00:11:05.824","source":"Server","level":"ERROR","message":"Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
+{"timestamp":"00:11:05.842","source":"Server","level":"ERROR","message":"Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
+{"timestamp":"00:11:05.846","source":"Server","level":"ERROR","message":"Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
+{"timestamp":"00:11:05.867","source":"Server","level":"ERROR","message":"Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
+{"timestamp":"00:11:05.888","source":"Server","level":"ERROR","message":"Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
+{"timestamp":"00:36:41.390","source":"Server","level":"ERROR","message":"Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
+{"timestamp":"00:36:41.465","source":"Server","level":"ERROR","message":"Error: ENOENT: no such file or directory, scandir 'C:\\kerrfolder\\movebank\\src\\app'"}
