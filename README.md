@@ -1,9 +1,9 @@
-# WorldView 3D
+# 3D Globe Kerr
 
 An interactive 3D globe application that displays comprehensive country information, built with Next.js, React Three Fiber, and Framer Motion.
 
 ## 🌍 Live Demo
-**View the live application**: [https://jepjep123ux.github.io/3D_Worldview_Kerrrr/](https://jepjep123ux.github.io/3D_Worldview_Kerrrr/)
+**View the live application**: [https://jepjep123ux.github.io/3D_globe_Kerr/](https://jepjep123ux.github.io/3D_globe_Kerr/)
 
 ## ✨ Features
 
@@ -32,7 +32,7 @@ An interactive 3D globe application that displays comprehensive country informat
 ### Local Development
 ```bash
 # Clone the repository
-git clone https://github.com/jepjep123ux/3D_Worldview_Kerrrr.git
+git clone https://github.com/jepjep123ux/3D_globe_Kerr.git
 cd 3D_Worldview_Kerrrr
 
 # Install dependencies
