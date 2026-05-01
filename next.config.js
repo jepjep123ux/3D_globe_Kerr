@@ -1,6 +1,5 @@
 const nextConfig = {
   output: 'export',
-  srcDir: './src',
   images: {
     unoptimized: true
   },
