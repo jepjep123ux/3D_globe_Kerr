@@ -1,10 +1,9 @@
 const nextConfig = {
   output: 'export',
+  srcDir: './src',
   images: {
     unoptimized: true
   },
-  basePath: '/3D_globe_Kerr',
-  assetPrefix: '/3D_globe_Kerr/',
 };
 
 module.exports = nextConfig;
