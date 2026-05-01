@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Wildlife Tracking Dashboard
+
+An interactive 3D wildlife tracking dashboard powered by Movebank API, built with Next.js, React Three Fiber, and Framer Motion.
+
+## Features
+
+- **3D Globe Visualization**: Interactive 3D Earth with realistic textures
+- **Animal Tracking**: Visualize animal movement paths in 3D with animated trails
+- **Playback System**: Animated timeline with play/pause controls
+- **Real-time Data**: Fetches live data from Movebank API
+- **Futuristic UI**: Glassmorphism panels with neon accents and particle effects
+- **Interactive Controls**: Orbit controls with zoom, rotate, and pan
+
+## Tech Stack
+
+- **Frontend**: Next.js 16, React, TypeScript
+- **3D Graphics**: Three.js, React Three Fiber, Drei
+- **Animations**: Framer Motion
+- **Styling**: Tailwind CSS with custom glassmorphism effects
+- **Data Source**: Movebank API
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+1. **Select a Study**: Choose from available public studies in the left panel
+2. **View Animal Tracks**: Animal movement paths are displayed on the 3D globe
+3. **Playback Animation**: Use the timeline controls at the bottom to animate movement
+4. **Animal Details**: Click on an animal in the legend to view detailed statistics
+5. **Interact with Globe**: Drag to rotate, scroll to zoom, right-click to pan
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/                    # Next.js app router
+│   ├── page.tsx           # Main dashboard page
+│   ├── globals.css        # Global styles with glassmorphism
+│   └── layout.tsx         # Root layout
+├── components/
+│   ├── globe/
+│   │   └── Globe.tsx      # 3D globe with Three.js
+│   ├── ui/
+│   │   ├── AnimalPanel.tsx # Animal info panel
+│   │   ├── PlaybackControls.tsx # Timeline controls
+│   │   └── StudySelector.tsx # Study selection
+│   └── animal/            # Animal-related components
+├── services/
+│   └── movebank.ts        # Movebank API service
+├── types/
+│   └── movebank.ts        # TypeScript type definitions
+└── lib/
+    └── utils.ts           # Utility functions
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Environment Variables
 
-## Deploy on Vercel
+The app uses public Movebank data by default. For private studies, you can configure authentication in `src/services/movebank.ts`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
+
+## Data Source
+
+Animal tracking data provided by [Movebank](https://www.movebank.org/) - a free, online database for animal tracking data hosted by the Max Planck Institute for Animal Behavior.
